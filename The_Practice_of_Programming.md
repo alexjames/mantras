@@ -12,7 +12,7 @@
   * avoid clever tricks and unusual constructs
 
 3. Macro names should not indicate specific values. The name will also need to be changed later if the use changes.
-```
+   ```
 Don't:
 #define ONE 1
 #define TEN 10
@@ -20,26 +20,26 @@ Don't:
 Do:
 #define INPUT_MODE 1
 #define BUFFER_SIZE 10
-```
+   ```
 
 4. Use long descriptive names for globals, short names for local variables.
-```
+   ```
 Don't:
 for (ElemenIndex = 0; ElementIndex < nelems; ElementIndex++)
 
 Do:
 for (i = 0; i < nelems; i++)
-```
-```
+   ```
+   ```
 Don't:
 int nelms = 3; // global variable
 
 Do:
 int number_of_buffer_elements = 3; // global variable
-```
+   ```
 
 5. Consistent adherence to a coding convention is more important than having favoring specific ones.
-```
+   ```
 Don't:
 int numberElements = 3;
 int buffer_size = 10;
@@ -47,10 +47,10 @@ int buffer_size = 10;
 Do:
 int number_elements = 3;
 int buffer_size = 10;
-```
+   ```
 
 6. Give related things related names.
-```
+   ```
 Don't:
 class UserQueue
 {
@@ -67,16 +67,16 @@ class UserQueue
     int nitems, front, capacity;
     public int nusers();
 }
-```
+   ```
 
 7. Use active names for functions. Function names should start with a verb followed by a noun(s).
-```
+   ```
 Don't:
 currentTime();
 
 Do:
 getCurrentTime();
-```
+   ```
 
 8. Function names should indicate return type if possible.
    ```
@@ -88,10 +88,10 @@ if (isoctal(x))
    ```
 
 9. Use natural forms of expressions. Negations are always tought to understand.
-```
+   ```
 Don't:
 if ((!block_id < actblks) || !(block_id >= i))
 
 Do:
 if ((block_id >= actblks) || (block_id < i))
-```
+   ```
