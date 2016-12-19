@@ -79,13 +79,13 @@ getCurrentTime();
 ```
 
 8. Function names should indicate return type if possible.
-```
+   ```
 Don't:
 if (checkoctal(x))
 
 Do:
 if (isoctal(x))
-```
+   ```
 
 9. Use natural forms of expressions. Negations are always tought to understand.
 ```
