@@ -68,3 +68,30 @@ class UserQueue
     public int nusers();
 }
 ```
+
+7. Use active names for functions. Function names should start with a verb followed by a noun(s).
+```
+Don't:
+currentTime();
+
+Do:
+getCurrentTime();
+```
+
+8. Function names should indicate return type if possible.
+```
+Don't:
+if (checkoctal(x))
+
+Do:
+if (isoctal(x))
+```
+
+9. Use natural forms of expressions. Negations are always tought to understand.
+```
+Don't:
+if ((!block_id < actblks) || !(block_id >= i))
+
+Do:
+if ((block_id >= actblks) || (block_id < i))
+```
