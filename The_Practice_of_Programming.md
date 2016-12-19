@@ -1,6 +1,6 @@
 # The Practice of Programming
 
-1. Simplicity, clarity and generality form the bedrock of good software
+1. Simplicity, clarity and generality form the bedrock of good software.
 
 2. Good code has...
   * straightforward logic
@@ -56,5 +56,15 @@ class UserQueue
 {
     int noOfItemsInQ, frontOfTheQueue, queuecapacity;
     public int noOfUsersInQueue();
+}
+
+* Inconsistent use of Q, queue and Queue.
+* Member variables don't need to mention 'queue' since that is implied.
+
+Do:
+class UserQueue
+{
+    int nitems, front, capacity;
+    public int nusers();
 }
 ```
