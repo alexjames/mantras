@@ -49,3 +49,12 @@ int number_elements = 3;
 int buffer_size = 10;
 ```
 
+6. Give related things related names.
+```
+Don't:
+class UserQueue
+{
+    int noOfItemsInQ, frontOfTheQueue, queuecapacity;
+    public int noOfUsersInQueue();
+}
+```
