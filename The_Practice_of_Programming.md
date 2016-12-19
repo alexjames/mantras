@@ -95,3 +95,19 @@ if ((!block_id < actblks) || !(block_id >= i))
 Do:
 if ((block_id >= actblks) || (block_id < i))
    ```
+10. Avoid too many complex expressions in a single line.
+   ```
+Don't:
+*x += (*xp=(2*k < (n-m) ? c[k+1]:d[k--]));
+
+Do:
+if (2*k < (n-m))
+{
+    *xp = c[k+1];
+}
+else
+{
+    *xp = d[k--];
+}
+*x += *xp
+   ```
