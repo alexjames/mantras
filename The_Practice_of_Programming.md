@@ -147,3 +147,17 @@ if ((block_id >= actblks) || (block_id < i))
 
    Problem when called as: while (isupper(c = getchar()))
    ```
+
+13. Use const instead of macros. 
+   ```
+   * 'Macros are a dangerous way to program because they change the lexical structure of the program underfoot.'
+
+Don't:
+#define ON 1
+#define OFF 0
+
+Do:
+const int on = 1;
+const int off = 0;
+   ```
+
