@@ -136,3 +136,14 @@ if ((block_id >= actblks) || (block_id < i))
    else
        // do stuff
    ```
+   
+12. Avoid function macros.
+   ```
+   * The avoided function call overhead is not worth the amount of problems it can create.
+   * Modern compilers and processors make this optimization irrelevant.
+   
+   Don't:
+   #define isupper(c) ((c) >= ' A ' && (c) <= 'Z')
+   
+   Problem when called as: while (isupper(c = getchar()))
+   ```
