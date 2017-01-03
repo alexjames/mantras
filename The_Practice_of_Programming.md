@@ -111,3 +111,28 @@ if ((block_id >= actblks) || (block_id < i))
    }
    *x += *xp
    ```
+
+11. Align if-else statements for maximum readability.
+   ```
+   Don't:
+   if (c1)
+       if (c2)
+           if (c3)
+               // do stuff
+           else
+               print
+       else
+           print
+   else
+       print
+
+   Do:
+   if (!c1)
+       print
+   else if (!c2)
+       print
+   else if (!c3)
+       print
+   else
+       // do stuff
+   ```
