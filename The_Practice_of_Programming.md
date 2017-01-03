@@ -144,6 +144,6 @@ if ((block_id >= actblks) || (block_id < i))
    
    Don't:
    #define isupper(c) ((c) >= ' A ' && (c) <= 'Z')
-   
+
    Problem when called as: while (isupper(c = getchar()))
    ```
