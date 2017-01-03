@@ -87,7 +87,7 @@ Do:
 if (isoctal(x))
    ```
 
-9. Use natural forms of expressions. Negations are always tought to understand.
+9. Use natural forms of expressions. Negations are always tough to understand.
    ```
 Don't:
 if ((!block_id < actblks) || !(block_id >= i))
@@ -160,4 +160,24 @@ Do:
 const int on = 1;
 const int off = 0;
    ```
+14. Comments should add something that is not obvious from the code. It should not re-state the obvious.
+   ```
+Don't:
+count++;   // increments count
 
+Do:
+count++;   // now we point to the end of the list
+   ```
+
+15. Comment all functions and global variables.
+   ```
+Do:
+const int total_elements = 5;
+struct node
+{
+    int data;            // holds the data
+    struct node *next;   // pointer to next node element
+};
+   ```
+
+16. Don't comment bad code - rewrite it. If it takes more than a few lines to explain whats happening, you should probably rewrite it. Good code needs fewer comments than bad code.
