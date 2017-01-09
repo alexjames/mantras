@@ -151,6 +151,8 @@ if ((block_id >= actblks) || (block_id < i))
 13. Use const instead of macros. 
    ```
    * 'Macros are a dangerous way to program because they change the lexical structure of the program underfoot.'
+   * Macros are hard to debug. You don't know exactly what they translated to and they don't necessarily correspond line-to-line with source code.
+   * Macros are simple text-substitution. They are not bound by the rules of the language.
 
 Don't:
 #define ON 1
