@@ -38,7 +38,7 @@ Do:
 int number_of_buffer_elements = 3; // global variable
    ```
 
-5. Consistent adherence to a coding convention is more important than having favoring specific ones.
+5. Consistent adherence to a coding convention is more important than favoring specific ones.
    ```
 Don't:
 int numberElements = 3;
